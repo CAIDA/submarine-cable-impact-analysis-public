@@ -1,4 +1,4 @@
-## Instructions: 1st script to run for BGP data analysis
+## Instructions: 1st script to run for BGP data analysis (#Python)
 ## Objective:
 ## This script compares all paths without loops going via the AS operating the cable
 ## (in this case AS37468) during the first 5 days of the month before the launch and
@@ -9,8 +9,8 @@
 import wandio, os, sys, time
 
 # Initializations
-limit = 0
 start_time = time.clock()
+limit = 0
 Result_folder = 'Results_set_1st_round'
 Cable_operating_AS = '37468'
 List_couples_after_cable_launch = set([])
@@ -55,12 +55,11 @@ with open(Result_folder + '/Paths_after_launch_via_Operating_AS.txt', 'a') as fh
 #            if limit == 10000000:
 #            	break
 
-
 end_time = time.clock()
 print ("The part 1 of the script was executed in =", end_time - start_time, "seconds", "\n")
 
 
-# Initializations
+# More Initializations
 limit = 0
 
 ## We traverse the list of AS paths before cable launch and store in
@@ -78,7 +77,7 @@ with open(Result_folder + '/Paths_before_launch_via_Operating_AS.txt', 'a') as f
                 AS_pair = AS_path[0]+ '-' +AS_path[-1]
                 
                 if AS_pair in List_couples_after_cable_launch:
-                    print ('found consistent AS pair', AS_pair)
+                    #print ('found consistent AS pair', AS_pair)
                     fh11.write('%s %s\n' %(AS_pair, line))
                     fh22.write('%s\n' %(AS_pair))
 
