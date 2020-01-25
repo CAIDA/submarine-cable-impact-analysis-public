@@ -2,7 +2,7 @@
 
 Our methodology can be divided into 4 steps. Each of them corresponds to a directory of this repository, which we specify below.  
 
-## All python packages that are needed to be installed for the scripts to run smoothly
+## All python packages that need to be installed for the scripts to run the scripts smoothly
 * Wandio
 
 
