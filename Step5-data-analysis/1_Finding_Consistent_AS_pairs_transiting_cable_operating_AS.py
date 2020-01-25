@@ -51,9 +51,9 @@ with open(Result_folder + '/Paths_after_launch_via_Operating_AS.txt', 'a') as fh
                 fh1.write('%s %s\n' %(AS_pair, line))
 
 ## For test purposes
-            limit += 1
-            if limit == 10000000:
-            	break
+#            limit += 1
+#            if limit == 10000000:
+#            	break
 
 
 end_time = time.clock()
@@ -83,9 +83,11 @@ with open(Result_folder + '/Paths_before_launch_via_Operating_AS.txt', 'a') as f
                     fh22.write('%s\n' %(AS_pair))
 
 ## For test purposes
-                limit += 1
-                if limit == 10000000000:
-                    break
+#                limit += 1
+#                if limit == 10000000000:
+#                    break
 
 end_time = time.clock()
 print ("The script was executed in = ", end_time - start_time, "seconds", "\n")
+
+print ("The total number of consistent AS pairs is = ", len(List_couples_after_cable_launch))
