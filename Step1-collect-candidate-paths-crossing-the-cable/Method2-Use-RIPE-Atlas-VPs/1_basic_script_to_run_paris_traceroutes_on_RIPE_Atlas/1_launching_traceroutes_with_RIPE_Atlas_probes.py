@@ -5,6 +5,7 @@
 ## selected worldwide toward in those located in a country.
 
 
+
 ## Launching traceroutes from Angola to Brazil (vice versa)
 import os, time, sys, random, json, datetime, time
 try:
@@ -14,11 +15,12 @@ except:
 
 
 ## Initializations
-start_time = time.clock()
+start_time = time.time()
 start_time_hrf = datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S')
 print ("start_time_hrf = ", start_time_hrf)
 Output_folder =  "Measurements_infos/"
 Both_Countries = ['CM', 'BR']
+protocols = ['ICMP', 'UDP']
 
 ## Full mesh traceroutes or WW towards country traceroutes.
 Full_mesh_traceroutes = 1
@@ -69,7 +71,7 @@ print ("Dict_probes_CountryA = ", Dict_probes_CountryA, len (Dict_probes_Country
 
 
 ## Getting list and all details about the probes in the first country i.e. Brazil - BR
-CountryB = Both_Countries[0]
+CountryB = Both_Countries[1]
 url_CountryB = 'https://atlas.ripe.net/api/v2/probes/?limit=100&country_code=' + CountryB
 print ('CountryB = ', Both_Countries[1])
 print ('url_CountryB = ', url_CountryB)
@@ -102,10 +104,14 @@ print ("Dict_probes_CountryB = ", Dict_probes_CountryB, len(Dict_probes_CountryB
 
 
 
+if os.path.exists('Final_List_measurements.txt'):
+    print ('File exists')
+else:
+    with open ('Final_List_measurements.txt', 'a') as fg:
+        fg.write ("%s; %s; %s; %s; %s; %s; %s; %s; %s\n" %('Timestamp', 'Datetime', 'ID_meas', 'Probe destination ID', 'IP destination', 'CC_destination', 'Probe Source IDs', 'CC_source', 'protocol'))
+
 
 ## Launching full-mesh ICMP/UDP paris-traceroutes measurements
-protocols = ['ICMP', 'UDP']
-
 if Full_mesh_traceroutes:
     
     for protocol in protocols:
@@ -115,7 +121,7 @@ if Full_mesh_traceroutes:
             value = len(Dict_probes_CountryB.keys())
             value = str(value).strip()
             
-            command = """curl --dump-header - -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d """ +  "\'" + """ {"definitions":[{"target": " """ + Dict_probes_CountryA[key_CountryA][3] + """ ", "af": 4, "timeout": 4000,"description": "Traceroute measurement from all probes in BR to """ + Dict_probes_CountryA[key_CountryA][3] + """ (AO, AS"""
+            command = """curl --dump-header - -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d """ +  "\'" + """ {"definitions":[{"target": " """ + Dict_probes_CountryA[key_CountryA][3] + """ ", "af": 4, "timeout": 4000,"description": "Traceroute measurement from all probes in """ + CountryB + """ to """ + Dict_probes_CountryA[key_CountryA][3] + """ (""" + CountryA + """, AS"""
             
             command +=  Dict_probes_CountryA[key_CountryA][4] +  """ )","protocol": \"""" + protocol + """\","resolve_on_probe": false,"packets": 3,"size": 48,"first_hop": 1,"max_hops": 32,"paris": 16,"destination_option_size": 0,"hop_by_hop_option_size": 0,"dont_fragment": false,"skip_dns_check": false,"type": "traceroute","is_public": false}],"probes": [{"value": " """
 
@@ -139,7 +145,7 @@ if Full_mesh_traceroutes:
                     if 'error' not in line11 and 'measurements' in line11 :
                         value1 = str(line11[17:-2]).strip()
                         if value1 != "":
-                            with open ('Final_List_measurements2.txt', 'a') as fg:
+                            with open ('Final_List_measurements.txt', 'a') as fg:
                                 #Timestamp, Datetime, ID_meas, Probe destination ID, IP destination, CC_destination, Probe Source IDs, CC_source
                                 fg.write ("%s; %s; %s; %s; %s; %s; %s; %s; %s\n" %(start_time, start_time_hrf, value1, key_CountryA,  Dict_probes_CountryA[key_CountryA][3], Dict_probes_CountryA[key_CountryA][1], '-'.join(Dict_probes_CountryB.keys()), CountryB, protocol))
 
@@ -179,7 +185,7 @@ if Full_mesh_traceroutes:
                         if 'error' not in line11 and 'measurements' in line11 :
                             value1 = str(line11[17:-2]).strip()
                             if value1 != "":
-                                with open ('Final_List_measurements2.txt', 'a') as fg:
+                                with open ('Final_List_measurements.txt', 'a') as fg:
                                     #Timestamp, Datetime, ID_meas, Probe destination ID, IP destination, CC_destination, Probe Source IDs, CC_source
                                     
                                     if len( Dict_probes_CountryA.keys()) > 1:
@@ -193,6 +199,7 @@ if Full_mesh_traceroutes:
                                         #print (start_time, start_time_hrf, value1, key_CountryB,  Dict_probes_CountryB[key_CountryB][3], Dict_probes_CountryB[key_CountryB][1], str(A[0]), CountryA, protocol)
                                         fg.write ("%s; %s; %s; %s; %s; %s; %s; %s; %s\n" %(start_time, start_time_hrf, value1, key_CountryB,  Dict_probes_CountryB[key_CountryB][3], Dict_probes_CountryB[key_CountryB][1], str(A[0]), CountryA, protocol))
 
+    
         print
         ### From the World to BR
         if Traceroutes_WW_Country:
@@ -212,6 +219,6 @@ if Full_mesh_traceroutes:
                     if 'error' not in line11 and 'measurements' in line11 :
                         value1 = str(line11[17:-2]).strip()
                         if value1 != "":
-                            with open ('Final_List_measurements2.txt', 'a') as fg:
+                            with open ('Final_List_measurements.txt', 'a') as fg:
                                 #Timestamp, Datetime, ID_meas, Probe destination ID, IP destination, CC_destination, Probe Source IDs, CC_source
-                                fg.write ("%s; %s; %s; %s; %s; %s; %s; %s; %s\n" %(start_time, start_time_hrf, value1, '', A_targeted_IP_in_CountryA, CountryA, 'WW', 'World', protocol))
+                                fg.write ("%s; %s; %s; %s; %s; %s; %s; %s; %s\n" %(start_time, start_time_hrf, value1, '', A_targeted_IP_in_CountryA, CountryA, 'World','WW', protocol))
