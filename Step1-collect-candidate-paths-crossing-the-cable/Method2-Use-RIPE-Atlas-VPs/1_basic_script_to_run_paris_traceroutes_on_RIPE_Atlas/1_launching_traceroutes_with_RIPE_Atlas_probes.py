@@ -19,6 +19,8 @@ start_time = time.time()
 start_time_hrf = datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S')
 print ("start_time_hrf = ", start_time_hrf)
 Output_folder =  "Measurements_infos/"
+## For this paper, we used the following line
+#Both_Countries = ['AO', 'BR']
 Both_Countries = ['CM', 'BR']
 protocols = ['ICMP', 'UDP']
 
