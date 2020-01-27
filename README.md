@@ -1,6 +1,10 @@
 # submarine-cable-impact-analysis
 
-Our methodology can be divided into 4 steps. Each of them corresponds to a directory of this repository, which we specify below.  
+Our methodology can be divided into 4 steps. Each of them corresponds to the first 4 directories of this repository:  
+* Step1-collect-candidate-paths-crossing-the-cable
+* Step2-identify-router-IPs-on-both-sides
+* Step3-search-for-comparable-historical-traceroutes
+* Step4-annotate-collected-paths
 
 ## All python packages that need to be installed for the scripts to run the scripts smoothly
 * Wandio
