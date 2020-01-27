@@ -1,0 +1,66 @@
+
+1561530876.77; 2019-06-25 23:34:36.765117;  wlg2-nz--192.168.33.8--AS4771; 187.95.24.98--187.95.24.0/24--AS53081; 115670
+src=192.168.33.8 dst=187.95.24.98
+1 192.168.33.1 () 0.562ms    AS17579 192.168.32.0/19
+2 125.236.192.9 (125-236-192-9.adsl.xtra.co.nz) 6800.471ms    AS4771 125.236.192.0/19
+3 122.56.116.5 (ae8-10.akbr6.global-gateway.net.nz) 10.656ms    ASNone None
+4 122.56.119.53 (ae7-2.akbr7.global-gateway.net.nz) 10.907ms    ASNone None
+5 202.50.232.29 (ae10-10.tkbr12.global-gateway.net.nz) 11.444ms    ASNone None
+6 210.55.202.194 (xe8-0-2-0.lebr7.global-gateway.net.nz) 135.182ms    ASNone None
+7 122.56.127.25 (ae3-10.sjbr3.global-gateway.net.nz) 139.592ms    ASNone None
+8 203.96.120.74 (ae0.pabr5.global-gateway.net.nz) 167.222ms    ASNone None
+9 62.115.145.204 (palo-b1-link.telia.net) 140.266ms    AS1299 62.115.0.0/16
+10 62.115.114.4 (nyk-bb3-link.telia.net) 239.776ms    AS1299 62.115.0.0/16
+11 62.115.141.244 (ash-bb3-link.telia.net) 239.819ms    AS1299 62.115.0.0/16
+12 62.115.119.195 (boca-b1-link.telia.net) 239.013ms    AS1299 62.115.0.0/16
+13 62.115.162.37 (angolacables-ic-335057-boca-b1.c.telia.net) 240.019ms    AS1299 62.115.0.0/16
+14 170.238.232.22 (pe1-nce012.br.spa.as37468.angolacables.ao) 346.612ms    AS37468 170.238.232.20/30
+15 170.238.234.25 () 350.072ms    AS37468 170.238.232.0/22
+16 200.220.128.162 () 346.224ms    AS27693 200.220.128.0/21
+17 200.220.143.6 (as53081.nipbr.com.br) 350.853ms    AS27693 200.220.136.0/21
+18 187.95.16.42 (187.95.16.42.netjacarei.nipcable.com) 351.463ms    AS53081 187.95.16.0/24
+19 187.95.24.98 (187.95.24.98.netjacarei.nipcable.com) 351.955ms    AS53081 187.95.24.0/24
+
+1561530876.77; 2019-06-25 23:34:36.765117;  wlg2-nz--192.168.33.8--AS4771; 187.95.24.98--187.95.24.0/24--AS53081; 115670
+src=192.168.33.8 dst=187.95.24.98
+1 192.168.33.1 () 0.562ms    AS17579 192.168.32.0/19
+2 125.236.192.9 (125-236-192-9.adsl.xtra.co.nz) 6800.471ms    AS4771 125.236.192.0/19
+3 122.56.116.5 (ae8-10.akbr6.global-gateway.net.nz) 10.656ms    ASNone None
+4 122.56.119.53 (ae7-2.akbr7.global-gateway.net.nz) 10.907ms    ASNone None
+5 202.50.232.29 (ae10-10.tkbr12.global-gateway.net.nz) 11.444ms    ASNone None
+6 210.55.202.194 (xe8-0-2-0.lebr7.global-gateway.net.nz) 135.182ms    ASNone None
+7 122.56.127.25 (ae3-10.sjbr3.global-gateway.net.nz) 139.592ms    ASNone None
+8 203.96.120.74 (ae0.pabr5.global-gateway.net.nz) 167.222ms    ASNone None
+9 62.115.145.204 (palo-b1-link.telia.net) 140.266ms    AS1299 62.115.0.0/16
+10 62.115.114.4 (nyk-bb3-link.telia.net) 239.776ms    AS1299 62.115.0.0/16
+11 62.115.141.244 (ash-bb3-link.telia.net) 239.819ms    AS1299 62.115.0.0/16
+12 62.115.119.195 (boca-b1-link.telia.net) 239.013ms    AS1299 62.115.0.0/16
+13 62.115.162.37 (angolacables-ic-335057-boca-b1.c.telia.net) 240.019ms    AS1299 62.115.0.0/16
+14 170.238.232.22 (pe1-nce012.br.spa.as37468.angolacables.ao) 346.612ms    AS37468 170.238.232.20/30
+15 170.238.234.25 () 350.072ms    AS37468 170.238.232.0/22
+16 200.220.128.162 () 346.224ms    AS27693 200.220.128.0/21
+17 200.220.143.6 (as53081.nipbr.com.br) 350.853ms    AS27693 200.220.136.0/21
+18 187.95.16.42 (187.95.16.42.netjacarei.nipcable.com) 351.463ms    AS53081 187.95.16.0/24
+19 187.95.24.98 (187.95.24.98.netjacarei.nipcable.com) 351.955ms    AS53081 187.95.24.0/24
+
+1561619823.15; 2019-06-27 00:17:03.152911;  wlg2-nz--192.168.33.8--AS4771; 187.95.24.98--187.95.24.0/24--AS53081; 131425
+src=192.168.33.8 dst=187.95.24.98
+1 192.168.33.1 () 0.414ms    AS17579 192.168.32.0/19
+2 125.236.192.9 (125-236-192-9.adsl.xtra.co.nz) 7881.396ms    AS4771 125.236.192.0/19
+3 122.56.116.5 (ae8-10.akbr6.global-gateway.net.nz) 10.859ms    ASNone None
+4 122.56.119.53 (ae7-2.akbr7.global-gateway.net.nz) 10.536ms    ASNone None
+5 122.56.127.53 () 135.269ms    ASNone None
+6 203.96.120.74 (ae0.pabr5.global-gateway.net.nz) 141.299ms    ASNone None
+7 62.115.145.204 (palo-b1-link.telia.net) 135.359ms    AS1299 62.115.0.0/16
+8 62.115.114.4 (nyk-bb3-link.telia.net) 243.793ms    AS1299 62.115.0.0/16
+9 62.115.141.244 (ash-bb3-link.telia.net) 215.528ms    AS1299 62.115.0.0/16
+10 62.115.119.195 (boca-b1-link.telia.net) 238.596ms    AS1299 62.115.0.0/16
+11 62.115.162.37 (angolacables-ic-335057-boca-b1.c.telia.net) 239.049ms    AS1299 62.115.0.0/16
+12 170.238.232.22 (pe1-nce012.br.spa.as37468.angolacables.ao) 341.944ms    AS37468 170.238.232.20/30
+13 170.238.234.25 () 341.169ms    AS37468 170.238.232.0/22
+14 200.220.128.162 () 346.729ms    AS27693 200.220.128.0/21
+15 200.220.143.6 (as53081.nipbr.com.br) 345.697ms    AS27693 200.220.136.0/21
+16 187.95.16.42 (187.95.16.42.netjacarei.nipcable.com) 341.798ms    AS53081 187.95.16.0/24
+17 187.95.24.98 (187.95.24.98.netjacarei.nipcable.com) 342.69ms    AS53081 187.95.24.0/24
+
+1561707615.12; 2019-06-28 00:40:15.120737;  wlg2-nz--192.168.33.8--AS4771; 187.95.24.98--187.95.24.0/24--AS53081; 147151
