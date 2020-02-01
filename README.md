@@ -21,7 +21,6 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 
 ### Search for comparable historical traceroutes.
 
- See /.../CAIDA_Work/22_analyzing_RIPE_Atlas_data_for_SACS/Roderick_beamer_Oberon_DB/*
 
 
 
