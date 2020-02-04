@@ -8,9 +8,10 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 * Step3-search-for-comparable-historical-traceroutes
 * Step4-annotate-collected-paths
 
-## All python packages that need to be installed for the scripts to run the scripts smoothly
+## Python packages that need to be installed to run the scripts smoothly
 * Wandio
 * urllib2 (Python2) or urllib (Python3)
+* IPy (https://pypi.org/project/IPy/)
 
 
 ### Collect candidate IP paths that could have crossed the cable.
