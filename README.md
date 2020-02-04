@@ -8,6 +8,8 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 * Step3-search-for-comparable-historical-traceroutes
 * Step4-annotate-collected-paths
 
+We add in Step5-data-analysis the scripts used for data analysis
+
 ## Python packages that need to be installed to run the scripts smoothly
 * Wandio
 * urllib2 (Python2) or urllib (Python3)
