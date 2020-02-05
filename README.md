@@ -15,6 +15,7 @@ We add in Step5-data-analysis the scripts used for data analysis
 * urllib2 (Python2) or urllib (Python3)
 * IPy (https://pypi.org/project/IPy/)
 * pyasn (https://pypi.org/project/pyasn/)
+  E.g. pip install --target=/usr/local/bin pyasn
 
 
 ### Collect candidate IP paths that could have crossed the cable.
