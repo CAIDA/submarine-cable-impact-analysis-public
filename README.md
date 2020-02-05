@@ -11,18 +11,21 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 We add in Step5-data-analysis the scripts used for data analysis
 
 ## Python packages that need to be installed to run the scripts smoothly
+E.g. pip install --target=/usr/local/bin pyasn
 * Wandio
 * urllib2 (Python2) or urllib (Python3)
 * IPy (https://pypi.org/project/IPy/)
 * pyasn (https://pypi.org/project/pyasn/)
-  E.g. pip install --target=/usr/local/bin pyasn
-
-
+* dnspython (https://pypi.org/project/dnspython/)
+ 
+ 
 ### Collect candidate IP paths that could have crossed the cable.
 
 
 
+
 ### Identify router IP interfaces on both sides of the cable.
+
 
 
 
