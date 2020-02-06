@@ -1,5 +1,7 @@
-There are two possibilities to execute this task:
+There are three possibilities to execute this task:
 
 1- Apply for an account on Vela (https://vela.caida.org/login) and use its interface or API.
 
-2- Use RIPE Atlas platform.
+2- Apply for an API-KEY to Vela API and use the CAIDA Ark platform
+
+3- Create a RIPE Atlas account and use RIPE Atlas platform.
