@@ -1,5 +1,5 @@
 
-# Finding candidate paths traversing the cable
+# Finding candidate paths crossing the deployed cable
 
 ## Instructions
 
