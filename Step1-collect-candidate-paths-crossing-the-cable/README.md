@@ -1,4 +1,6 @@
 
+# Finding candidate paths traversing the cable
+
 ## Instructions
 
 There are three possibilities to execute this task:
