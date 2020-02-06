@@ -1,4 +1,6 @@
 
+## Instructions
+
 There are three possibilities to execute this task:
 
 1- Apply for an account on Vela (https://vela.caida.org/login) and use its interface or API.
@@ -8,10 +10,21 @@ There are three possibilities to execute this task:
 3- Create a RIPE Atlas account and use RIPE Atlas platform.
 
 
-
-## Our last checks on Feb 6, 2020
+## Last checks: Our last measurements on Feb 6, 2020
 
 ### Using RIPE Atlas
 
-Traceroutes from 8 probes in Cameroon towards Ark probes. 
-* https://atlas.ripe.net/measurements/23924177/#!general
+Traceroutes from 8  RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable). 
+* cgh-br: https://atlas.ripe.net/measurements/23924177/
+* gig-br: https://atlas.ripe.net/measurements/23924178/
+* poa2-br: https://atlas.ripe.net/measurements/23924179/
+* sao-br: https://atlas.ripe.net/measurements/23924180/
+
+Traceroutes from the only RIPE Atlas probe in Angola towards Ark probes in Brazil (). 
+* cgh-br: https://atlas.ripe.net/measurements/23924177/
+* gig-br: https://atlas.ripe.net/measurements/23924178/
+* poa2-br: https://atlas.ripe.net/measurements/23924179/
+* sao-br: https://atlas.ripe.net/measurements/23924180/
+
+
+
