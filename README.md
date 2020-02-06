@@ -1,3 +1,5 @@
+Note: This repository is still being updated.  
+
 # submarine-cable-impact-analysis
 
 Our methodology can be divided into 4 steps. Each of them corresponds to the first 4 directories of this repository:  
@@ -6,12 +8,19 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 * Step3-search-for-comparable-historical-traceroutes
 * Step4-annotate-collected-paths
 
-## All python packages that need to be installed for the scripts to run the scripts smoothly
+We add in Step5-data-analysis the scripts used for data analysis
+
+## Python packages that need to be installed to run the scripts smoothly
+E.g. pip install --target=/usr/local/bin pyasn
 * Wandio
 * urllib2 (Python2) or urllib (Python3)
-
-
+* IPy (https://pypi.org/project/IPy/)
+* pyasn (https://pypi.org/project/pyasn/)
+* dnspython (https://pypi.org/project/dnspython/)
+ 
+ 
 ### Collect candidate IP paths that could have crossed the cable.
+
 
 
 
@@ -19,9 +28,9 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 
 
 
+
 ### Search for comparable historical traceroutes.
 
- See /.../CAIDA_Work/22_analyzing_RIPE_Atlas_data_for_SACS/Roderick_beamer_Oberon_DB/*
 
 
 
