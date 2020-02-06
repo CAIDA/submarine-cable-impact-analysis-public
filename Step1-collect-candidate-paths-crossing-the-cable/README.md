@@ -3,9 +3,9 @@
 
 There are three possibilities to execute this task:
 
-1- Apply for an account on Vela (https://vela.caida.org/login) and use its interface or API.
+1- Apply for an account on CAIDA's Vela (https://vela.caida.org/login) and use its interface.
 
-2- Apply for an API-KEY to Vela API and use the CAIDA Ark platform
+2- Apply for an API-KEY of CAIDA's Vela API and use the CAIDA Ark platform
 
 3- Create a RIPE Atlas account and use RIPE Atlas platform.
 
@@ -14,7 +14,7 @@ There are three possibilities to execute this task:
 
 ### Using RIPE Atlas
 
-#### Traceroutes from 8  RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable - the cable is not yet lit). 
+#### Traceroutes from 8 RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable - the cable is not yet lit). 
 * cgh-br: https://atlas.ripe.net/measurements/23924177/
 * gig-br: https://atlas.ripe.net/measurements/23924178/
 * poa2-br: https://atlas.ripe.net/measurements/23924179/
