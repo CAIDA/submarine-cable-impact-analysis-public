@@ -27,7 +27,7 @@ before_file = path_to_as_rank_ribs + '20180801/20180801.all-paths.bz2'
 after_file = path_to_as_rank_ribs + '20181001/20181001.all-paths.bz2'
 
 ## When running locally
-#path_to_as_rank_ribs = '/Data/bgp-data/'
+#path_to_as_rank_ribs = '/../../Datastore/bgp-data/'
 #before_file = path_to_as_rank_ribs + '08_01-05/20180801.all-paths.bz2'
 #after_file = path_to_as_rank_ribs + '10_01-05/20181001.all-paths.bz2'
 
