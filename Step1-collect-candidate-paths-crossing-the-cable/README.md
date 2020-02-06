@@ -32,4 +32,6 @@ There are three possibilities to execute this task:
 * sao-br: https://atlas.ripe.net/measurements/23924769/
 
 
-#### Traceroutes from 64 RIPE Atlas probes in Brazil towards IPs in Cameroon
+#### Traceroutes from 64 RIPE Atlas probes in Brazil towards IPs in Angola
+* Angola Cables - Looking Glass: https://atlas.ripe.net/measurements/23925510/
+* RIPE Atlas #19757: https://atlas.ripe.net/measurements/23925509/
