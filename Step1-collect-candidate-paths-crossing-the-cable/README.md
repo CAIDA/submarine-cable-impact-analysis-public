@@ -23,7 +23,10 @@ There are three possibilities to execute this task:
 * sao-br: https://atlas.ripe.net/measurements/23924180/
 
 #### Traceroutes from 64 RIPE Atlas probes in Brazil towards IPs in Cameroon
-
+* https://atlas.ripe.net/measurements/23925508/
+* https://atlas.ripe.net/measurements/23925507/
+* https://atlas.ripe.net/measurements/23925506/
+* https://atlas.ripe.net/measurements/23925505/
 
 #### Traceroutes from the only RIPE Atlas probe in Angola towards Ark probes in Brazil (Usage of the SACS cable). 
 * cgh-br: https://atlas.ripe.net/measurements/23924766/
