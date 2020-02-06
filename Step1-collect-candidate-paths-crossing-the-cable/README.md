@@ -14,7 +14,7 @@ There are three possibilities to execute this task:
 
 ### Using RIPE Atlas
 
-Traceroutes from 8  RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable). 
+Traceroutes from 8  RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable - the cable is not yet lit). 
 * cgh-br: https://atlas.ripe.net/measurements/23924177/
 * gig-br: https://atlas.ripe.net/measurements/23924178/
 * poa2-br: https://atlas.ripe.net/measurements/23924179/
