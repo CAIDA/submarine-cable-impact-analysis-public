@@ -14,13 +14,13 @@ There are three possibilities to execute this task:
 
 ### Using RIPE Atlas
 
-Traceroutes from 8  RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable - the cable is not yet lit). 
+#### Traceroutes from 8  RIPE Atlas probes in Cameroon towards Ark probes in Brazil (No usage of the SAIL cable - the cable is not yet lit). 
 * cgh-br: https://atlas.ripe.net/measurements/23924177/
 * gig-br: https://atlas.ripe.net/measurements/23924178/
 * poa2-br: https://atlas.ripe.net/measurements/23924179/
 * sao-br: https://atlas.ripe.net/measurements/23924180/
 
-Traceroutes from the only RIPE Atlas probe in Angola towards Ark probes in Brazil (Usage of the SACS cable). 
+#### Traceroutes from the only RIPE Atlas probe in Angola towards Ark probes in Brazil (Usage of the SACS cable). 
 * cgh-br: https://atlas.ripe.net/measurements/23924766/
 * gig-br: https://atlas.ripe.net/measurements/23924767/
 * poa2-br: https://atlas.ripe.net/measurements/23924768/
