@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
         List_probes = []
         beg = 0
-        with open ('list_probes_API.txt', 'r') as fh:
+        with open ( sub_folder + '/list_probes_API.txt', 'r') as fh:
             for line in fh:
                 if 'by_country' in line:
                     beg = 1
