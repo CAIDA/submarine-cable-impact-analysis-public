@@ -1,0 +1,1 @@
+Although the traceroutes in this directory show an IP hop within AS30992 which appears in between hops in Brazil, we deduced that the SAIL cable between Cameroon and Brazil is not yet lit, but MTN Cameroon is using its IPs in Brazil (may be for tests purposes). 

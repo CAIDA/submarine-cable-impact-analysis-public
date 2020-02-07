@@ -1,0 +1,6 @@
+The Angola Cable Looking glass is close to the SACS link. The traceroute in this directory shows that when going from 
+the looking glass in Angola towards the Ark probe in Brazil, SACS is crossed via the IP link:
+
+197.149.149.162 (pe-nc026.ang.sgn.as.angolacables.ao) - 170.238.232.145 (170.238.232.145)
+
+Still, we need to look for the aliases of the routers on both sides of the SACS link
