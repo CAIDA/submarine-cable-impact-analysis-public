@@ -1,0 +1,245 @@
+## We added our comments above each traceroute. We detect the cable crossing using the RTT difference corresponding to the cable (in this case 62ms)
+
+## Most interesting case as the Ark probe cgh-br was deployed close to the SACS cable: Potentially Traverses the SACS cable from hop 2 to 3
+## i.e. the pair of IPs: 170.238.232.66 (pe1-nc011.br.ftz.as37468.angolacables.ao) - 170.238.232.155 (155.232.238.170.in-addr.arpa.)
+
+1580956388 (2020-02-05 18:33:08): Traceroute id  592369  from  ('src=192.168.50.34 (BR', 'cgh-br) to dst=197.149.149.162(AO)')
+1 170.238.234.65 (65.234.238.170.in-addr.arpa.) 1.809ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+2 170.238.232.66 (pe1-nc011.br.ftz.as37468.angolacables.ao) 45.999ms    AS37468 170.238.232.64/30 ==> via AS Operating SACS Cable 
+3 170.238.232.155 (155.232.238.170.in-addr.arpa.) 106.732ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+4 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 107.052ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+## Potentially crosses the SACS cable from hop 5 to 6 i.e. the pair
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 
+
+1580956327 (2020-02-05 18:32:07): Traceroute id  592361  from  ('src=200.160.7.159 (BR', 'sao-br) to dst=197.149.149.162(AO)')
+1 200.160.7.253 (xe-0-0-1-11.ar3.nu.registro.br) 0.604ms    AS22548 200.160.0.0/20
+2 200.160.0.253 (ae0-0.core1.nu.registro.br) 0.8ms    AS22548 200.160.0.0/20
+3 200.160.0.159 (xe-4-0-0-61.gw2.jd.registro.br) 0.762ms    AS22548 200.160.0.0/20
+4 187.16.221.193 (as37468.saopaulo.sp.ix.br) 1.831ms    AS61568 187.16.216.0/21
+5 170.238.233.58 (58.233.238.170.in-addr.arpa.) 47.515ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+6 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 105.175ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 12 to 13 i.e.
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 
+
+1580956338 (2020-02-05 18:32:18): Traceroute id  592363  from  ('src=192.168.15.3 (BR', 'poa2-br) to dst=197.149.149.162(AO)')
+1 192.168.15.1 (1.15.168.192.in-addr.arpa.) 0.431ms    ASNone None
+2 179.184.126.60 (gvt-b-sr02.pae.gvt.net.br) 21.159ms    AS18881 179.184.126.0/24
+3 191.30.9.229 (191.30.9.229.dynamic.adsl.gvt.net.br) 20.553ms    AS18881 191.30.0.0/16
+4 152.255.149.88 (152-255-149-88.user.vivozap.com.br) 20.638ms    AS26599 152.240.0.0/12
+5 201.86.56.118 (gvt-te-0-12-0-13.rc03.cta.gvt.net.br) 38.162ms    AS18881 201.86.0.0/17
+6 201.22.69.15 (201.22.69.15.dynamic.adsl.gvt.net.br) 45.375ms    AS18881 201.22.64.0/19
+7 177.99.251.141 (gvt-be-2.rc02.spo.gvt.net.br) 40.882ms    AS18881 177.99.240.0/20
+8 187.100.191.116 (187-100-191-116.dsl.telesp.net.br) 38.636ms    AS27699 187.100.0.0/16
+9 187.100.168.215 (187-100-168-215.dsl.telesp.net.br) 38.888ms    AS27699 187.100.0.0/16
+10 187.100.163.11 (187-100-163-11.dsl.telesp.net.br) 38.622ms    AS27699 187.100.0.0/16
+11 187.92.6.14 (187-92-6-14.customer.tdatabrasil.net.br) 283.616ms    AS10429 187.92.0.0/16
+12 170.238.233.58 (58.233.238.170.in-addr.arpa.) 334.65ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+13 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 408.139ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 6 to 7 i.e.
+## 170.238.233.56 (56.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 
+
+1580956369 (2020-02-05 18:32:49): Traceroute id  592367  from  ('src=200.159.254.143 (BR', 'gig-br) to dst=197.149.149.162(AO)')
+1 200.159.254.167 (167.254.159.200.in-addr.arpa.) 0.56ms    AS1916 200.159.240.0/20
+2 200.143.240.49 (49.240.143.200.in-addr.arpa.) 4.412ms    AS1916 200.143.240.0/21
+3 200.143.253.21 (rj-lanrj.bkb.rnp.br) 0.332ms    AS1916 200.143.192.0/18
+4 200.143.253.221 (sp2-rj-oi.bkb.rnp.br) 8.142ms    AS1916 200.143.192.0/18
+5 187.16.221.193 (as37468.saopaulo.sp.ix.br) 9.677ms    AS61568 187.16.216.0/21
+6 170.238.233.56 (56.233.238.170.in-addr.arpa.) 53.591ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+7 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 115.721ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 5 to 6 i.e.
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 170.238.232.150 (150.232.238.170.in-addr.arpa.) 
+
+1580956332 (2020-02-05 18:32:12): Traceroute id  592362  from  ('src=200.160.7.159 (BR', 'sao-br) to dst=197.149.149.17(AO)')
+1 200.160.7.253 (xe-0-0-1-11.ar3.nu.registro.br) 0.655ms    AS22548 200.160.0.0/20
+2 200.160.0.253 (ae0-0.core1.nu.registro.br) 0.73ms    AS22548 200.160.0.0/20
+3 200.160.0.159 (xe-4-0-0-61.gw2.jd.registro.br) 0.719ms    AS22548 200.160.0.0/20
+4 187.16.221.193 (as37468.saopaulo.sp.ix.br) 1.604ms    AS61568 187.16.216.0/21
+5 170.238.233.58 (58.233.238.170.in-addr.arpa.) 43.433ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+6 170.238.232.150 (150.232.238.170.in-addr.arpa.) 103.967ms    AS37468 170.238.232.148/30 ==> via AS Operating SACS Cable 
+7 197.149.149.153 (pe2-nc024.ang.lua.as37468.angolacables.ao) 106.002ms    AS37468 197.149.149.152/30 ==> via AS Operating SACS Cable 
+8 197.149.151.3 (pe1-ne011.ang.lua.as37468.angolacables.ao) 105.931ms    AS37468 197.149.151.3/32 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 6 to 7 i.e.
+## 170.238.233.56 (56.233.238.170.in-addr.arpa.) - 170.238.232.150 (150.232.238.170.in-addr.arpa.) 
+
+1580956351 (2020-02-05 18:32:31): Traceroute id  592364  from  ('src=192.168.15.3 (BR', 'poa2-br) to dst=197.149.149.17(AO)')
+1 192.168.15.1 (1.15.168.192.in-addr.arpa.) 0.445ms    ASNone None
+2 179.184.126.60 (gvt-b-sr02.pae.gvt.net.br) 20.597ms    AS18881 179.184.126.0/24
+3 191.30.9.225 (191.30.9.225.dynamic.adsl.gvt.net.br) 20.622ms    AS18881 191.30.0.0/16
+4 187.100.163.11 (187-100-163-11.dsl.telesp.net.br) 38.383ms    AS27699 187.100.0.0/16
+5 187.92.6.14 (187-92-6-14.customer.tdatabrasil.net.br) 310.102ms    AS10429 187.92.0.0/16
+6 170.238.233.56 (56.233.238.170.in-addr.arpa.) 354.91ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+7 170.238.232.150 (150.232.238.170.in-addr.arpa.) 426.882ms    AS37468 170.238.232.148/30 ==> via AS Operating SACS Cable 
+8 197.149.149.149 (pe2-nc023.ang.lua.as37468.angolacables.ao) 417.115ms    AS37468 197.149.149.148/30 ==> via AS Operating SACS Cable 
+9 197.149.151.19 (pe1-ne012.ang.lua.as37468.angolacables.ao) 408.605ms    AS37468 197.149.151.19/32 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 6 to 7 i.e.
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 170.238.232.146 (146.232.238.170.in-addr.arpa.)
+
+1580956382 (2020-02-05 18:33:02): Traceroute id  592368  from  ('src=200.159.254.143 (BR', 'gig-br) to dst=197.149.149.17(AO)')
+1 200.159.254.167 (167.254.159.200.in-addr.arpa.) 0.662ms    AS1916 200.159.240.0/20
+2 200.143.240.49 (49.240.143.200.in-addr.arpa.) 0.317ms    AS1916 200.143.240.0/21
+3 200.143.253.21 (rj-lanrj.bkb.rnp.br) 4.748ms    AS1916 200.143.192.0/18
+4 200.143.253.221 (sp2-rj-oi.bkb.rnp.br) 8.518ms    AS1916 200.143.192.0/18
+5 187.16.221.193 (as37468.saopaulo.sp.ix.br) 9.461ms    AS61568 187.16.216.0/21
+6 170.238.233.58 (58.233.238.170.in-addr.arpa.) 53.733ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+7 170.238.232.146 (146.232.238.170.in-addr.arpa.) 115.983ms    AS37468 170.238.232.144/30 ==> via AS Operating SACS Cable 
+8 197.149.149.153 (pe2-nc024.ang.lua.as37468.angolacables.ao) 116.262ms    AS37468 197.149.149.152/30 ==> via AS Operating SACS Cable 
+9 197.149.151.3 (pe1-ne011.ang.lua.as37468.angolacables.ao) 116.074ms    AS37468 197.149.151.3/32 ==> via AS Operating SACS Cable 
+
+
+
+
+## Spurious traceroute
+1580956394 (2020-02-05 18:33:14): Traceroute id  592370  from  ('src=192.168.50.34 (BR', 'cgh-br) to dst=197.149.149.17(AO)')
+1 192.168.50.1 (1.50.168.192.in-addr.arpa.) 0.334ms    AS17579 192.168.32.0/19
+
+
+
+
+## Potentially crosses the SACS cable from hop 5 to 6 i.e.
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao)
+
+1580956991 (2020-02-05 18:43:11): Traceroute id  592376  from  ('src=200.160.7.159 (BR', 'sao-br) to dst=197.149.149.162(AO)')
+1 200.160.7.253 (xe-0-0-1-11.ar3.nu.registro.br) 0.644ms    AS22548 200.160.0.0/20
+2 200.160.0.253 (ae0-0.core1.nu.registro.br) 0.668ms    AS22548 200.160.0.0/20
+3 200.160.0.159 (xe-4-0-0-61.gw2.jd.registro.br) 0.776ms    AS22548 200.160.0.0/20
+4 187.16.221.193 (as37468.saopaulo.sp.ix.br) 4.462ms    AS61568 187.16.216.0/21
+5 170.238.233.58 (58.233.238.170.in-addr.arpa.) 43.377ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+6 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 104.5ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 12 to 13 i.e.
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao)
+
+1580957003 (2020-02-05 18:43:23): Traceroute id  592378  from  ('src=192.168.15.3 (BR', 'poa2-br) to dst=197.149.149.162(AO)')
+1 192.168.15.1 (1.15.168.192.in-addr.arpa.) 0.432ms    ASNone None
+2 179.184.126.60 (gvt-b-sr02.pae.gvt.net.br) 20.916ms    AS18881 179.184.126.0/24
+3 191.30.9.229 (191.30.9.229.dynamic.adsl.gvt.net.br) 20.409ms    AS18881 191.30.0.0/16
+4 152.255.149.88 (152-255-149-88.user.vivozap.com.br) 20.612ms    AS26599 152.240.0.0/12
+5 201.86.56.118 (gvt-te-0-12-0-13.rc03.cta.gvt.net.br) 38.129ms    AS18881 201.86.0.0/17
+6 201.22.69.15 (201.22.69.15.dynamic.adsl.gvt.net.br) 45.428ms    AS18881 201.22.64.0/19
+7 177.99.251.141 (gvt-be-2.rc02.spo.gvt.net.br) 39.805ms    AS18881 177.99.240.0/20
+8 187.100.191.116 (187-100-191-116.dsl.telesp.net.br) 38.359ms    AS27699 187.100.0.0/16
+9 187.100.168.215 (187-100-168-215.dsl.telesp.net.br) 39.105ms    AS27699 187.100.0.0/16
+10 187.100.163.11 (187-100-163-11.dsl.telesp.net.br) 38.837ms    AS27699 187.100.0.0/16
+11 187.92.6.14 (187-92-6-14.customer.tdatabrasil.net.br) 266.836ms    AS10429 187.92.0.0/16
+12 170.238.233.58 (58.233.238.170.in-addr.arpa.) 323.271ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+13 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 380.236ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 5 to 6 i.e.
+## 170.238.233.56 (56.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 
+
+1580957034 (2020-02-05 18:43:54): Traceroute id  592382  from  ('src=200.159.254.143 (BR', 'gig-br) to dst=197.149.149.162(AO)')
+1 200.143.240.49 (49.240.143.200.in-addr.arpa.) 8.47ms    AS1916 200.143.240.0/21
+2 200.143.253.21 (rj-lanrj.bkb.rnp.br) 0.337ms    AS1916 200.143.192.0/18
+3 200.143.253.221 (sp2-rj-oi.bkb.rnp.br) 8.136ms    AS1916 200.143.192.0/18
+4 187.16.221.193 (as37468.saopaulo.sp.ix.br) 9.812ms    AS61568 187.16.216.0/21
+5 170.238.233.56 (56.233.238.170.in-addr.arpa.) 53.529ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+6 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 114.694ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 3 to 4 i.e.
+## 170.238.232.66 (pe1-nc011.br.ftz.as37468.angolacables.ao) - 170.238.232.155 (155.232.238.170.in-addr.arpa.) 
+
+1580957045 (2020-02-05 18:44:05): Traceroute id  592384  from  ('src=192.168.50.34 (BR', 'cgh-br) to dst=197.149.149.162(AO)')
+1 192.168.50.1 (1.50.168.192.in-addr.arpa.) 0.812ms    AS17579 192.168.32.0/19
+2 170.238.234.65 (65.234.238.170.in-addr.arpa.) 1.797ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+3 170.238.232.66 (pe1-nc011.br.ftz.as37468.angolacables.ao) 45.962ms    AS37468 170.238.232.64/30 ==> via AS Operating SACS Cable 
+4 170.238.232.155 (155.232.238.170.in-addr.arpa.) 106.643ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+5 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao) 107.193ms    AS37468 197.149.149.160/30 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 5 to 6 i.e.
+##  170.238.233.58 (58.233.238.170.in-addr.arpa.) - 170.238.232.150 (150.232.238.170.in-addr.arpa.)
+
+1580956997 (2020-02-05 18:43:17): Traceroute id  592377  from  ('src=200.160.7.159 (BR', 'sao-br) to dst=197.149.149.17(AO)')
+1 200.160.7.253 (xe-0-0-1-11.ar3.nu.registro.br) 0.615ms    AS22548 200.160.0.0/20
+2 200.160.0.253 (ae0-0.core1.nu.registro.br) 0.551ms    AS22548 200.160.0.0/20
+3 200.160.0.159 (xe-4-0-0-61.gw2.jd.registro.br) 0.712ms    AS22548 200.160.0.0/20
+4 187.16.221.193 (as37468.saopaulo.sp.ix.br) 2.366ms    AS61568 187.16.216.0/21
+5 170.238.233.58 (58.233.238.170.in-addr.arpa.) 44.865ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+6 170.238.232.150 (150.232.238.170.in-addr.arpa.) 103.905ms    AS37468 170.238.232.148/30 ==> via AS Operating SACS Cable 
+7 197.149.149.153 (pe2-nc024.ang.lua.as37468.angolacables.ao) 105.702ms    AS37468 197.149.149.152/30 ==> via AS Operating SACS Cable 
+8 197.149.151.3 (pe1-ne011.ang.lua.as37468.angolacables.ao) 105.931ms    AS37468 197.149.151.3/32 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 6 to 7 i.e.
+## 170.238.233.56 (56.233.238.170.in-addr.arpa.) - 170.238.232.150 (150.232.238.170.in-addr.arpa.) 
+
+1580957016 (2020-02-05 18:43:36): Traceroute id  592379  from  ('src=192.168.15.3 (BR', 'poa2-br) to dst=197.149.149.17(AO)')
+1 192.168.15.1 (1.15.168.192.in-addr.arpa.) 0.514ms    ASNone None
+2 179.184.126.60 (gvt-b-sr02.pae.gvt.net.br) 21.243ms    AS18881 179.184.126.0/24
+3 191.30.9.225 (191.30.9.225.dynamic.adsl.gvt.net.br) 21.01ms    AS18881 191.30.0.0/16
+4 187.100.163.11 (187-100-163-11.dsl.telesp.net.br) 38.636ms    AS27699 187.100.0.0/16
+5 187.92.6.14 (187-92-6-14.customer.tdatabrasil.net.br) 255.133ms    AS10429 187.92.0.0/16
+6 170.238.233.56 (56.233.238.170.in-addr.arpa.) 297.651ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+7 170.238.232.150 (150.232.238.170.in-addr.arpa.) 350.412ms    AS37468 170.238.232.148/30 ==> via AS Operating SACS Cable 
+8 197.149.149.149 (pe2-nc023.ang.lua.as37468.angolacables.ao) 349.389ms    AS37468 197.149.149.148/30 ==> via AS Operating SACS Cable 
+9 197.149.151.19 (pe1-ne012.ang.lua.as37468.angolacables.ao) 330.905ms    AS37468 197.149.151.19/32 ==> via AS Operating SACS Cable 
+
+
+
+
+## Potentially crosses the SACS cable from hop 6 to 7 i.e.
+## 170.238.233.58 (58.233.238.170.in-addr.arpa.) - 170.238.232.146 (146.232.238.170.in-addr.arpa.) 
+
+1580957040 (2020-02-05 18:44:00): Traceroute id  592383  from  ('src=200.159.254.143 (BR', 'gig-br) to dst=197.149.149.17(AO)')
+1 200.159.254.167 (167.254.159.200.in-addr.arpa.) 0.471ms    AS1916 200.159.240.0/20
+2 200.143.240.49 (49.240.143.200.in-addr.arpa.) 5.635ms    AS1916 200.143.240.0/21
+3 200.143.253.21 (rj-lanrj.bkb.rnp.br) 0.334ms    AS1916 200.143.192.0/18
+4 200.143.253.221 (sp2-rj-oi.bkb.rnp.br) 8.118ms    AS1916 200.143.192.0/18
+5 187.16.221.193 (as37468.saopaulo.sp.ix.br) 12.158ms    AS61568 187.16.216.0/21
+6 170.238.233.58 (58.233.238.170.in-addr.arpa.) 53.718ms    AS37468 170.238.232.0/22 ==> via AS Operating SACS Cable 
+7 170.238.232.146 (146.232.238.170.in-addr.arpa.) 114.238ms    AS37468 170.238.232.144/30 ==> via AS Operating SACS Cable 
+8 197.149.149.153 (pe2-nc024.ang.lua.as37468.angolacables.ao) 116.245ms    AS37468 197.149.149.152/30 ==> via AS Operating SACS Cable 
+9 197.149.151.3 (pe1-ne011.ang.lua.as37468.angolacables.ao) 116.198ms    AS37468 197.149.151.3/32 ==> via AS Operating SACS Cable 
+
+
+
+
+## Spurious traceroute
+1580957051 (2020-02-05 18:44:11): Traceroute id  592385  from  ('src=192.168.50.34 (BR', 'cgh-br) to dst=197.149.149.17(AO)')
+1 192.168.50.1 (1.50.168.192.in-addr.arpa.) 0.918ms    AS17579 192.168.32.0/19
+
+
+
+## Conclusions: Candidate IP paths crossing the cable potentially traverse the pairs of IPs:  
+170.238.233.58 (58.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao)
+170.238.233.58 (58.233.238.170.in-addr.arpa.) - 170.238.232.146 (146.232.238.170.in-addr.arpa.)
+170.238.233.56 (56.233.238.170.in-addr.arpa.) - 170.238.232.150 (150.232.238.170.in-addr.arpa.)
+170.238.232.66 (pe1-nc011.br.ftz.as37468.angolacables.ao) - 170.238.232.155 (155.232.238.170.in-addr.arpa.)
+170.238.233.56 (56.233.238.170.in-addr.arpa.) - 197.149.149.162 (pe2-nc026.ang.sgn.as37468.angolacables.ao)
+170.238.233.58 (58.233.238.170.in-addr.arpa.) - 170.238.232.150 (150.232.238.170.in-addr.arpa.)
