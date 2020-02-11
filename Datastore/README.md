@@ -1,5 +1,5 @@
-* Nationality 
-These files classify every three months the ASes of the internet per countries/or 
+## Nationality 
+The files in the folder Nationality classify every three months the ASes of the internet per countries/or 
 specify whether they are international, looking into their customer cône, their prefixes and 
 the countries in which these are used. 
 
