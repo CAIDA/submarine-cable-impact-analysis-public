@@ -10,7 +10,7 @@ Our methodology can be divided into 4 steps. Each of them corresponds to the fir
 
 We added in Step5-data-analysis the scripts used for data analysis
 
-## Python packages that need to be installed to run the scripts smoothly
+## Python packages to install for running the scripts smoothly
 E.g. pip install --target=/usr/local/bin pyasn
 * Wandio
 * urllib2 (Python2) or urllib (Python3)
