@@ -17,7 +17,8 @@ E.g. pip install --target=/usr/local/bin pyasn
 * IPy (https://pypi.org/project/IPy/)
 * pyasn (https://pypi.org/project/pyasn/)
 * dnspython (https://pypi.org/project/dnspython/)
- 
+* docopt (https://pypi.org/project/docopt/) 
+* pycountry-convert (https://pypi.org/project/pycountry-convert/)
  
 ## Steps 
 ### Collect candidate IP paths that could have crossed the cable.
