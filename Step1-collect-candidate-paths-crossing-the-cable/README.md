@@ -14,13 +14,14 @@ There are three possibilities to execute this task:
 
 ## Last checks: Our last measurements on Feb 6, 2020
 
-### Using RIPE Atlas
+### Using RIPE Atlas 
+Note: data available at https://atlas.ripe.net/api/v2/measurements/<measurement_id>/results/?format=json
 
 #### Traceroutes from 8 RIPE Atlas probes in Cameroon towards Ark probes in Brazil (existence of spurious outputs; No usage of the SAIL cable - the cable is not yet lit)
-* cgh-br: https://atlas.ripe.net/measurements/23924177/
-* gig-br: https://atlas.ripe.net/measurements/23924178/
-* poa2-br: https://atlas.ripe.net/measurements/23924179/
-* sao-br: https://atlas.ripe.net/measurements/23924180/
+* cgh-br: https://atlas.ripe.net/measurements/23924177/ (data available at https://atlas.ripe.net/api/v2/measurements/23924177/results/?format=json)
+* gig-br: https://atlas.ripe.net/measurements/23924178/ (data available at https://atlas.ripe.net/api/v2/measurements/23924178/results/?format=json)
+* poa2-br: https://atlas.ripe.net/measurements/23924179/ (data available at https://atlas.ripe.net/api/v2/measurements/23924179/results/?format=json)
+* sao-br: https://atlas.ripe.net/measurements/23924180/ (data available at https://atlas.ripe.net/api/v2/measurements/23924180/results/?format=json)
 
 #### Traceroutes from 64 RIPE Atlas probes in Brazil towards IPs in Cameroon (existence of spurious outputs; No usage of the SAIL cable - the cable is not yet lit)
 * https://atlas.ripe.net/measurements/23925508/
