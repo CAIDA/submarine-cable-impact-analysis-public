@@ -5,7 +5,7 @@
 
 There are three possibilities to execute this task:
 
-1- Apply for an account on CAIDA's Vela (https://www.caida.org/projects/ark/vela/web-api/) and use its interface torun traceroutes between the probes located in the countries on both sides of the considered cable.
+1- Apply for an account on CAIDA's Vela (https://www.caida.org/projects/ark/vela/web-api/) and use its interface to run traceroutes between the probes located in the countries on both sides of the considered cable.
 
 2- Apply for an API-KEY of CAIDA's Vela API and use the CAIDA Ark platform (https://www.caida.org/projects/ark/)
 
