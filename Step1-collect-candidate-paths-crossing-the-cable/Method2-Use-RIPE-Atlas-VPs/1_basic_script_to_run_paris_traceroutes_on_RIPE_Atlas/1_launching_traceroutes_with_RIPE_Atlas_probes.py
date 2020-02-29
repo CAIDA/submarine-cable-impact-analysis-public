@@ -2,7 +2,7 @@
 ## This is a test (#Python) script, which could be used to
 ## launch RIPE Atlas full-mesh traceroutes between a set of
 ## probes in two countries or from a set of random probes
-## selected worldwide toward in those located in a country.
+## selected worldwide toward those located in a country.
 
 
 
