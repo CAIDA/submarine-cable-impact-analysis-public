@@ -20,7 +20,7 @@ E.g. pip install --target=/usr/local/bin pyasn
 * docopt (https://pypi.org/project/docopt/) 
 * pycountry-convert (https://pypi.org/project/pycountry-convert/)
  
-## Brief descripton of the folders content  
+## Brief description of the folders' content   
 ### Step 1: Collect candidate IP paths that could have crossed the cable.
 
 
