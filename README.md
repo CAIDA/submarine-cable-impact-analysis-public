@@ -1,4 +1,6 @@
-Note: This repository is still being updated.  
+Note: This repository is still being updated. 
+
+PAM Paper: Unintended consequences: Effects of submarine cable deployment on Internet routing (https://www.caida.org/publications/papers/2020/unintended_consequences/)
 
 # submarine-cable-impact-analysis
 
