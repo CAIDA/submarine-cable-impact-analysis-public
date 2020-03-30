@@ -24,18 +24,14 @@ E.g. pip install --target=/usr/local/bin pyasn
  
 ## Brief description of the folders' content   
 ### Step 1: Collect candidate IP paths that could have crossed the cable.
-
-
-
+This folder contains the scripts for 2 possible ways for achieving this goal (Method1-Use-Henya-and-Ark-VPs and Method2-Use-RIPE-Atlas-VPs). The first method can be used for Ark VPs, while the second can be used for RIPE Atlas probe. 
 
 ### Step 2: Identify router IP interfaces on both sides of the cable.
-
-
-
+To identify the router IP interfaces, you can run the script 1_identify_router_IPs_from_ITDK_data_v2.py. The links IPs are listed in Final_list_IPs_RA.txt, and Final_list_IPs_RB.txt
 
 ### Step 3: Search for comparable historical traceroutes.
 
 
 
-
 ### Step 4: Annotate collected paths.
+
