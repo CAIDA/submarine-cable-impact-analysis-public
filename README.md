@@ -35,3 +35,8 @@ To identify the router IP interfaces, you can run the script 1_identify_router_I
 
 ### Step 4: Annotate collected paths.
 
+
+### Step 5: Data analysis.
+You can use the script 1_Finding_Consistent_AS_pairs_transiting_cable_operating_AS.py to find consistent AS pairs transiting the AS operating the cable, and 2_Computing_lengths_AS_paths_between_consistent_AS_pairs.py to compute the length of AS paths between the same AS, destination prefixes pre & post SACS.
+
+## Access to the data
