@@ -32,7 +32,6 @@ To identify the router IP interfaces, you can run the script 1_identify_router_I
 ### Step 3: Search for comparable historical traceroutes.
 
 
-
 ### Step 4: Annotate collected paths.
 
 
@@ -40,3 +39,5 @@ To identify the router IP interfaces, you can run the script 1_identify_router_I
 You can use the script 1_Finding_Consistent_AS_pairs_transiting_cable_operating_AS.py to find consistent AS pairs transiting the AS operating the cable, and 2_Computing_lengths_AS_paths_between_consistent_AS_pairs.py to compute the length of AS paths between the same AS, destination prefixes pre & post SACS.
 
 ## Access to the data
+Collected and analyzed traceroutes and other datasets generated during the analysis are available here: http://data.caida.org/datasets/supplement/2020-unintended-consequences/
+
